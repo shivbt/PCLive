@@ -1,0 +1,32 @@
+Note: See criu/include/magic.h to get complete set of dumped files and its
+      associated magic number.
+
+INVENTORY is related with all other type of dump INFO. It is not explicit, hence
+don't expect this from RPC or Command Line as input to --dump-info option.
+
+Encoded Images:
+    cgroup
+    core
+    fdinfo
+    files
+    fs
+    ids
+    inventory       (This image file is related with all other images, hence it is not explicit)
+    mm
+    mountpoints
+    pagemap
+    pipes-data
+    pstree
+    seccomp
+    tcp-stream
+
+    other_ns        (NEW, TODO: Add)
+
+    posix_timers    (NEW, TODO: Add)
+    signals         (NEW, TODO: Add)
+    zombies         (NEW, TODO: Add)
+    apparmor        (NEW, TODO: Add)
+
+RAW Images with data:
+    pages
+    tmpfs-dev-%u.tar.gz

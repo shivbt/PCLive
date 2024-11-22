@@ -1,0 +1,8 @@
+container_name redis
+iterations 3
+parallel_restore 1
+dst_ip 172.27.27.134
+dst_server_port 5050
+nfs_host_container_dir redis_container
+container_work_dir /home/cse/container_workspace
+page_server_dir page_server_dir

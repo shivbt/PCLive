@@ -1,0 +1,73 @@
+BUG REPORT
+==========
+Report BUGs by emailing deba@cse.iitk.ac.in
+
+BUILD and CLEAN
+===============
+To build, use `make'. It builds two binaries i.e., `bm' and `bmcli'
+To clean object files, execute `make clean'
+To clean text files, execute `make cleantxt'
+
+USAGE
+=====
+
+Make sure `tmpfs' is mounted in the system. 
+
+Step 1: Launch the `bm' executable. It should run until killed.
+Step 2: Use the `bmcli' to carry-out different actions. Use `bmcli --help' to know the usage syntax.
+
+Usage: ./bmcli <--list |-l|--action|-a> [OPTIONS]
+OPTIONS
+-P
+	 with --list or -l, lists all processes. No arguments necessary
+	 with --action or -a, the followig actions are allowed.
+	 <-c> Create a process
+	 <-d> Kill a process, Must provide -p option specifying the pid, see below
+-F
+	 with --list or -l, lists all files opened by the process. The pid must be provided with -p argument
+	 with --action or -a, the followig actions are allowed.
+	 <-c> Open a file for a process specified with -p option
+	 <-d> Close the file (fd specified by -i) opened by a process (specified with -p)
+	 Must provide -p and -i option specifying the pid and fd, respectively
+	 <-w> Writes pages (specified by -s) to a file (fd specified by -i) for a process specified with -p option
+	 Must provide -p, -i, -s option specifying the pid, fd and pages, respectively
+	 <-r> Reads pages (specified by -s) from a file (fd specified by -i) for a process specified with -p option
+	 Must provide -p, -i, -s option specifying the pid, fd and pages, respectively
+	 <-k> Seeks to a file offset (specified by -s) for a process specified with -p option
+	 Must provide -p, -i, -s option specifying the pid, fd and pages, respectively
+	 Note: for read, write and seek, the size or offset is specified by -s option in pages.
+
+-T
+	 with --list or -l, lists all threads active in the process. The pid must be provided with -p argument
+	 with --action or -a, the followig actions are allowed.
+	 <-c> Create a thread within a process specified with -p option
+	 <-d> Terminate the thread (tid specified by -i) opened by a process (specified with -p)
+	 Must provide -p and -i option specifying the pid and tid, respectively
+-M
+	 with --list or -l, lists all memory areas mapped by the process. The pid must be provided with -p argument
+	 with --action or -a, the followig actions are allowed.
+	 <-c> Create a memory map within a process specified with -p option.
+	 Size of the mapping (in pages) must be provided with -s option 
+	 <-d> Unmap the memory map (mapid specified by -i) created by a process (specified with -p)
+	 Must provide -p and -i option specifying the pid and mapid, respectively
+	 <-w> Writes pages (specified by -s) to the start of memory (mapid specified by -i) for process specified with -p option
+	 Must provide -p, -i, -s option specifying the pid, mapid and pages, respectively
+	 <-r> Reads pages (specified by -s) from the start of memory (mapid specified by -i) for process specified with -p option
+	 Must provide -p, -i, -s option specifying the pid, fd and pages, respectively
+	 Note: for read and write, the size is specified by -s option in pages. Operations performed at the starting address
+
+-p <pid>
+	 Specify the PID of the process for which the action is performed
+
+-i <id>
+	 Specify the ID of the construct (file, memory or thread)on which the action is performed
+
+-s <pages>
+	 Specify the size in pages for memory and file operations
+Examples:
+            To list all processes, execute `bmcli -l -P'
+            To create a new process, execute `bmcli -a -P -c'
+            To open a file for any process, execute `bmcli -a -c -p <pid> -F` 
+            To list all files by any process, execute `bmcli -l -p <pid> -F` 
+            To close a file by any process, execute `bmcli -a -d -p <pid> -i <fd> -F` 
+            To read two pages from the current offset of a file, execute `bmcli -a -r -p <pid> -i <fd> -s 2 -F`

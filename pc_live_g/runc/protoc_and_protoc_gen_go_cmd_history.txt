@@ -1,0 +1,1004 @@
+ 1030  ls xfer_server_dir/3
+ 1031  ls xfer_server_dir/4
+ 1032  ls xfer_server_dir/5
+ 1033  ls xfer_server_dir/6
+ 1034  ls xfer_server_dir/7
+ 1035  sudo runc kill microbm KILL
+ 1036  sudo ./clean_after_iter_dump_diskless.sh 
+ 1037  sudo rm container_rs.log 
+ 1038  la
+ 1039  la /tmp/
+ 1040  la
+ 1041  sudo runc kill microbm KILL
+ 1042  vim test_migrate_local_pcriu.sh 
+ 1043  tmux attach -t op
+ 1044  tmux attach -t mig
+ 1045  sudo runc ps microbm
+ 1046  sudo vim restore.log 
+ 1047  sudo runc kill microbm KILL
+ 1048  sudo ./clean_after_iter_dump_diskless.sh 
+ 1049  la
+ 1050  sudo rm container_rs.log 
+ 1051  la
+ 1052  sudo runc list
+ 1053  vim test_migrate_local_pcriu.sh 
+ 1054  tmux attach -t op
+ 1055  tmux attach -t mig
+ 1056  sudo runc ps microbm
+ 1057  sudo runc kill microbm KILL
+ 1058  ls xfer_server_dir/1
+ 1059  ls xfer_server_dir/2
+ 1060  ls xfer_server_dir/3
+ 1061  ls xfer_server_dir/4
+ 1062  ls xfer_server_dir/5
+ 1063  ls xfer_server_dir/6
+ 1064  ls xfer_server_dir/7
+ 1065  sudo ./clean_after_iter_dump_diskless.sh 
+ 1066  la
+ 1067  sudo rm container_rs.log 
+ 1068  ls
+ 1069  la 
+ 1070  la /tmp/
+ 1071  sudo runc list
+ 1072  la
+ 1073  tmux attach -t op
+ 1074  tmux attach -t mig
+ 1075  vi diskless_migrate_pcriu.sh 
+ 1076  tmux attach -t op
+ 1077  tmux attach -t mig
+ 1078  ls xfer_server_dir/
+ 1079  ls xfer_server_dir/1
+ 1080  du xfer_server_dir/1
+ 1081  du xfer_server_dir/2
+ 1082  du xfer_server_dir/3
+ 1083  du xfer_server_dir/4
+ 1084  du xfer_server_dir/5
+ 1085  dmesg
+ 1086  sudo dmesg -C
+ 1087  dmesg
+ 1088  sudo ./clean_after_iter_dump_diskless.sh 
+ 1089  la
+ 1090  la /tmp/
+ 1091  la
+ 1092  la /tmp/
+ 1093  vim diskless_migrate_pcriu.sh 
+ 1094  tmux attach -t op
+ 1095  tmux attach -t mig
+ 1096  la
+ 1097  sudo ./clean_after_iter_dump_diskless.sh 
+ 1098  la
+ 1099  la /tmp/
+ 1100  la
+ 1101  la /tmp/
+ 1102  ls observations/
+ 1103  vim diskless_migrate_pcriu.sh 
+ 1104  tmux attach -t op
+ 1105  tmux attach -t mig
+ 1106  sudo runc list
+ 1107  sudo ./clean_after_iter_dump_diskless.sh 
+ 1108  la
+ 1109  la /tmp/
+ 1110  la
+ 1111  la /tmp/
+ 1112  dmesg
+ 1113  sudo dmesg -C
+ 1114  dmesg
+ 1115  tmux attach -t op
+ 1116  tmux attach -t mig
+ 1117  vim test_migrate_local_pcriu.sh 
+ 1118  tmux attach -t op
+ 1119  tmux attach -t mig
+ 1120  sudo runc list
+ 1121  sudo runc ps microbm
+ 1122  sudo runc kill microbm KILL
+ 1123  sudo vim restore.log 
+ 1124  sudo runc kill microbm KILL
+ 1125  sudo vim restore.log 
+ 1126  sudo vim container_rs.log 
+ 1127  dmesg
+ 1128  sudo demsg -C
+ 1129  sudo dmesg -C
+ 1130  dmesg
+ 1131  la
+ 1132  sudo ./clean_after_iter_dump_diskless.sh 
+ 1133  sudo ./pcriu_test_clean.sh 
+ 1134  la
+ 1135  la /tmp/
+ 1136  sudo rm container_rs.log 
+ 1137  la
+ 1138  la /tmp/
+ 1139  tmux attach -t op
+ 1140  tmux attach -t mig
+ 1141  sudo runc list
+ 1142  sudo runc ps microbm
+ 1143  sudo vim restore.log 
+ 1144  sudo runc kill microbm KILL
+ 1145  sudo ./clean_after_iter_dump_diskless.sh 
+ 1146  la
+ 1147  la /tmp/
+ 1148  sudo rm container_rs.log 
+ 1149  la
+ 1150  ls observations/
+ 1151  la
+ 1152  la /tmp/
+ 1153  sudo runc kill microbm KILL
+ 1154  tmux attach -t op
+ 1155  tmux attach -t mig
+ 1156  sudo runc list
+ 1157  sudo runc ps microbm
+ 1158  sudo vim restore.log 
+ 1159  sudo runc kill microbm KILL
+ 1160  sudo ./clean_after_iter_dump_diskless.sh 
+ 1161  sudo ./pcriu_test_clean.sh 
+ 1162  la
+ 1163  la /tmp/
+ 1164  sudo rm container_rs.log 
+ 1165  la
+ 1166  la /tmp/
+ 1167  la
+ 1168  tmux attach -t op
+ 1169  tmux attach -t mig
+ 1170  sudo ./clean_after_iter_dump_diskless.sh 
+ 1171  la
+ 1172  la /tmp/
+ 1173  vim diskless_migrate_pcriu.sh 
+ 1174  tmux attach -t op
+ 1175  tmux attach -t mig
+ 1176  sudo ./clean_after_iter_dump_diskless.sh 
+ 1177  la
+ 1178  la /tmp/
+ 1179  la
+ 1180  la /tmp/
+ 1181  dmesg
+ 1182  sudo dmesg -C
+ 1183  dmesg
+ 1184  cd office-machine-related/
+ 1185  git pull
+ 1186  exit
+ 1187  cd office-machine-related/
+ 1188  git pull
+ 1189  cd container_workspace/pCRIU/
+ 1190  cscope -R
+ 1191  cd ..
+ 1192  man __gcov_flush
+ 1193  man gcov_flush
+ 1194  cd pCRIU/
+ 1195  criu -V
+ 1196  git log | head
+ 1197  cscope -R
+ 1198  cd container_workspace/
+ 1199  ls
+ 1200  cat shiv_nfs_containers/redis_container/rootfs/redis_run_r95.sh 
+ 1201  man process_vm_readv
+ 1202  man readv
+ 1203  cd pCRIU/
+ 1204  cscope -R
+ 1205  cd ..
+ 1206  sudo vim restore.log 
+ 1207  ps axjf
+ 1208  sudo kill -9 6828
+ 1209  sudo kill -9 6818
+ 1210  sudo kill -9 6809
+ 1211  ps axjf
+ 1212  ps aux | grep criu
+ 1213  ps aux | grep runc
+ 1214  sudo runc list
+ 1215  sudo ./clean_after_iter_dump_diskless.sh 
+ 1216  la
+ 1217  la /tmp/
+ 1218  sudo ./pcriu_test_clean.sh 
+ 1219  la
+ 1220  la /tmp/
+ 1221  sudo rm /tmp/prestore_pipe_xfer_to_criu 
+ 1222  la
+ 1223  la /tmp/
+ 1224  dmesg
+ 1225  sudo demsg -C
+ 1226  sudo dmesg -C
+ 1227  dmesg
+ 1228  la
+ 1229  la /tmp/
+ 1230  sudo cat container_rs.log 
+ 1231  sudo rm container_rs.log 
+ 1232  la
+ 1233  la /tmp/
+ 1234  vim test_migrate_local_pcriu.sh 
+ 1235  tmux attach -t op
+ 1236  tmux attach -t mig
+ 1237  vim test_mi
+ 1238  vim test_migrate_local_pcriu.sh 
+ 1239  tmux attach -t mig
+ 1240  sudo runc list
+ 1241  sudo vim restore.log 
+ 1242  cd pCRIU/
+ 1243  cscope -R
+ 1244  cd ..
+ 1245  ls
+ 1246  sudo vim restore.log 
+ 1247  sudo crit show xfer_server_dir/1/files.img 
+ 1248  sudo crit show xfer_server_dir/1/files.img | grep bash
+ 1249  sudo crit show xfer_server_dir/1/files.img | grep bash -n2
+ 1250  sudo crit show xfer_server_dir/1/files.img | less
+ 1251  sudo vim restore.log 
+ 1252  cd pCRIU/
+ 1253  cscope -R
+ 1254  ls
+ 1255  cscope -R
+ 1256  git diff
+ 1257  make clean
+ 1258  make -j6
+ 1259  sudo make install
+ 1260  git status
+ 1261  git diff
+ 1262  git status
+ 1263  git checkout criu/cr-service.
+ 1264  git checkout criu/cr-service.c
+ 1265  git status
+ 1266  cscope -R
+ 1267  git status
+ 1268  git diff
+ 1269  git log
+ 1270  git add *
+ 1271  git log | head -n23
+ 1272  git status
+ 1273  git log | head -n23
+ 1274  git commit -m "Implementing parallel restore v1.2.2.1
+ 1275  [FIXING] Output printing of ycsb benchmark process.
+ 1276  [NEXT] Pointer to modify next code line/ block is *TODO: Next*
+ 1277  [TODO] Make reset and clean functions for each subsystem...
+ 1278         Partial/ full data update in some *search_and_update_* fns...
+ 1279  [DELAYED] Updates in *search_and_update* fn
+ 1280  [REMARKS] tty related info... (prev-s commit messages)
+ 1281  [UNDO: TODO] Have to uncomment below line in the code file (pstree.c)
+ 1282                //BUG_ON(pi->pid->state != TASK_UNDEF);
+ 1283               This line is commented for testing purpose only.
+ 1284  [NOT TESTED] Compilation Success (pCRIU and Vanilla CRIU not checked)
+ 1285  "
+ 1286  make -j6
+ 1287  make clean
+ 1288  git push
+ 1289  make clean
+ 1290  make -j6
+ 1291  sudo make install
+ 1292  cd ..
+ 1293  cd pCRIU/
+ 1294  ls
+ 1295  cscope -R
+ 1296  git diff
+ 1297  make clean
+ 1298  make -j6
+ 1299  make clean
+ 1300  git sttaus
+ 1301  git status
+ 1302  git add *
+ 1303  git status
+ 1304  git commit -m "Implementing parallel restore v1.2.2.2
+ 1305  [FIXING] Output printing of ycsb benchmark process v0.2
+ 1306  [NEXT] Pointer to modify next code line/ block is *TODO: Next*
+ 1307  [TODO] Make reset and clean functions for each subsystem...
+ 1308         Partial/ full data update in some *search_and_update_* fns...
+ 1309  [DELAYED] Updates in *search_and_update* fn
+ 1310  [REMARKS] tty related info... (prev-s commit messages)
+ 1311  [UNDO: TODO] Have to uncomment below line in the code file (pstree.c)
+ 1312                //BUG_ON(pi->pid->state != TASK_UNDEF);
+ 1313               This line is commented for testing purpose only.
+ 1314  [NOT TESTED] Compilation Success (pCRIU and Vanilla CRIU not checked)
+ 1315  "
+ 1316  git push
+ 1317  make clean
+ 1318  make -j6
+ 1319  sudo make install
+ 1320  make clean
+ 1321  make lcean
+ 1322  make clean
+ 1323  la
+ 1324  criu -V
+ 1325  git log | head
+ 1326  cd container_workspace/
+ 1327  ls
+ 1328  tmux ls
+ 1329  ls shiv_nfs_containers
+ 1330  ls
+ 1331  ls observations/
+ 1332  ls
+ 1333  vim diskless_migrate_pcriu.sh 
+ 1334  tmux attach -t op
+ 1335  cd shiv_nfs_containers/redis_container/
+ 1336  sudo runc run redis
+ 1337  sudo vim config.json 
+ 1338  cd ~/container_workspace/
+ 1339  tmux attach -t op
+ 1340  tmux attach -t mig
+ 1341  ls
+ 1342  sudo runc list
+ 1343  sudo ./clean_after_iter_dump_diskless.sh 
+ 1344  la
+ 1345  la /tmp/
+ 1346  la
+ 1347  la /tmp/
+ 1348  ls observations/
+ 1349  la
+ 1350  la /tmp/
+ 1351  ls ycsb_related_files/
+ 1352  ls
+ 1353  tmux attach -t op
+ 1354  tmux attach -t mig
+ 1355  sudo ./clean_after_iter_dump_diskless.sh 
+ 1356  la
+ 1357  la /tmp/
+ 1358  la
+ 1359  la /tmp/
+ 1360  dmesg
+ 1361  sudo dmesg -C
+ 1362  la
+ 1363  cd pCRIU/
+ 1364  git status
+ 1365  git log
+ 1366  cd ..
+ 1367  ls
+ 1368  cd pRunC/
+ 1369  cd ../pCRIU/
+ 1370  cscope -R
+ 1371  make clean
+ 1372  make -j6
+ 1373  sudo  make install
+ 1374  sudo make install
+ 1375  cd ..
+ 1376  ls
+ 1377  vim test_migrate_local_pcriu.sh 
+ 1378  la
+ 1379  la /tmp/
+ 1380  la
+ 1381  tmux attach -t op
+ 1382  tmux attach -t mg
+ 1383  tmux attach -t mig
+ 1384  sudo runc kill redis KILL
+ 1385  ps aux | grep test
+ 1386  ps aux | grep criu
+ 1387  ps aux | grep runc
+ 1388  ps axjf
+ 1389  ls
+ 1390  ls xfer_server_dir/
+ 1391  ls xfer_server_dir/1
+ 1392  sudo ./clean_after_iter_dump_diskless.sh 
+ 1393  la
+ 1394  la /tmp/
+ 1395  la
+ 1396  la /tmp/
+ 1397  vim test_migrate_local_pcriu.sh 
+ 1398  tmux attach -t op
+ 1399  tmux attach -t mig
+ 1400  sudo runc list
+ 1401  ps axjf
+ 1402  sudo vim restore.log 
+ 1403  la xfer_server_dir/
+ 1404  la xfer_server_dir/1
+ 1405  la xfer_server_dir/2
+ 1406  la xfer_server_dir/3
+ 1407  la xfer_server_dir/4
+ 1408  sudo ./analyze_dump_info.sh files global
+ 1409  diff observations/files-1.json observations/files-2.json 
+ 1410  diff observations/files-2.json observations/files-3.json 
+ 1411  diff observations/files-3.json observations/files-4.json 
+ 1412  diff observations/files-4.json observations/files-5.json 
+ 1413  diff observations/files-5.json observations/files-6.json 
+ 1414  crit show xfer_server_dir/1/files.img | grep "bash"
+ 1415  crit show xfer_server_dir/1/files.img | grep "bash" -n2
+ 1416  crit show xfer_server_dir/1/files.img | grep "bash" -n3
+ 1417  crit show xfer_server_dir/2/files.img | grep "bash" -n3
+ 1418  crit show xfer_server_dir/6/files.img | grep "bash" -n3
+ 1419  du shiv_nfs_containers/redis_container/rootfs/bin/bash 
+ 1420  ls shiv_nfs_containers/redis_container/rootfs/bin/bash -lh
+ 1421  sudo vim restore.log 
+ 1422  la
+ 1423  ps axjf
+ 1424  sudo kill -9 22745
+ 1425  sudo kill -9 22733
+ 1426  sudo kill -9 22722
+ 1427  ps axjf
+ 1428  sudo ./clean_after_iter_dump_diskless.sh 
+ 1429  sudo ./pcriu_test_clean.sh 
+ 1430  la
+ 1431  la /tmp/
+ 1432  sudo rm /tmp/prestore_pipe_xfer_to_criu 
+ 1433  la
+ 1434  la /tmp/
+ 1435  sudo rm container_rs.log 
+ 1436  la
+ 1437  la /tmp/
+ 1438  la
+ 1439  la /tmp/
+ 1440  ls observations/
+ 1441  ls
+ 1442  vim test_migrate_local_pcriu.sh 
+ 1443  la
+ 1444  la /tmp/
+ 1445  la
+ 1446  la /tmp/
+ 1447  ls observations/
+ 1448  tmux attach -t op
+ 1449  tmux attach -t mig
+ 1450  sudo runc list
+ 1451  sudo runc ps redis
+ 1452  sudo cat shiv_nfs_containers/redis_container/rootfs/YCSB/ycsb_tcp_run_1M_phosts_r70.out 
+ 1453  la
+ 1454  sudo runc kill redis KILL
+ 1455  sudo ./clean_after_iter_dump_diskless.sh 
+ 1456  la
+ 1457  la /tmp/
+ 1458  sudo cat container_rs.log 
+ 1459  la
+ 1460  la /tmp/
+ 1461  ls shiv_nfs_containers/redis_container/rootfs/YCSB/
+ 1462  tmux attach -t op
+ 1463  tmux attach -t mig
+ 1464  sudo runc ps redis
+ 1465  sudo runc kill redis KILL
+ 1466  sudo ./clean_after_iter_dump_diskless.sh 
+ 1467  la
+ 1468  la /tmp/
+ 1469  sudo cat shiv_nfs_containers/redis_container/rootfs/YCSB/ycsb_tcp_run_1M_phosts_r70.out 
+ 1470  ls
+ 1471  tmux attach -t op
+ 1472  tmux attach -t mig
+ 1473  sudo runc ps redis
+ 1474  sudo tail -f shiv_nfs_containers/redis_container/rootfs/YCSB/ycsb_tcp_run_1M_phosts_r
+ 1475  sudo tail -f shiv_nfs_containers/redis_container/rootfs/YCSB/ycsb_tcp_run_1M_phosts_r95.out 
+ 1476  sudo runc kill redis KILL
+ 1477  sudo ./clean_after_iter_dump_diskless.sh 
+ 1478  la
+ 1479  la /tmp/
+ 1480  sudo rm container_rs.log 
+ 1481  la
+ 1482  la /tmp/
+ 1483  la
+ 1484  la /tmp/
+ 1485  la
+ 1486  vim TODO.NEXT 
+ 1487  ls
+ 1488  la
+ 1489  la /tmp/
+ 1490  sudo runc list
+ 1491  la
+ 1492  la /tmp/
+ 1493  ls
+ 1494  la
+ 1495  la /tmp/
+ 1496  tmux attach -t op
+ 1497  vim diskless_migrate_pcriu.sh 
+ 1498  tmux attach -t mig
+ 1499  sudo ./clean_after_iter_dump_diskless.sh 
+ 1500  la
+ 1501  la /tmp/
+ 1502  la
+ 1503  la /tmp/
+ 1504  criu -V
+ 1505  tmux attach -t op
+ 1506  tmux attach -t mig
+ 1507  sudo tail -f shiv_nfs_containers/redis_container/rootfs/debug_redis_server.log 
+ 1508  tmux attach -t mig
+ 1509  sudo tail -f shiv_nfs_containers/redis_container/rootfs/debug_redis_server.log 
+ 1510  tmux attach -t mig
+ 1511  vim shiv_nfs_containers/redis_container/rootfs/redis_run_r95.sh 
+ 1512  vim shiv_nfs_containers/mongodb_container/rootfs/run_microbm_custom_mem.sh 
+ 1513  vim shiv_nfs_containers/redis_container/rootfs/redis_run_r95.sh 
+ 1514  vim shiv_nfs_containers/redis_container/rootfs/redis_run_r90.sh 
+ 1515  vim shiv_nfs_containers/redis_container/rootfs/redis_run_r80.sh 
+ 1516  vim shiv_nfs_containers/redis_container/rootfs/redis_run_r70.sh 
+ 1517  vim shiv_nfs_containers/redis_container/rootfs/redis_run_r60.sh 
+ 1518  vim shiv_nfs_containers/redis_container/rootfs/redis_run_r50.sh 
+ 1519  vim shiv_nfs_containers/redis_container/rootfs/redis_run_r95.sh 
+ 1520  ls shiv_nfs_containers/redis_container/rootfs/
+ 1521  ls shiv_nfs_containers/redis_container/
+ 1522  sudo ./clean_after_iter_dump_diskless.sh 
+ 1523  la
+ 1524  la /tmp/
+ 1525  la
+ 1526  la /tmp/
+ 1527  ls observations/
+ 1528  la
+ 1529  la /tmp/
+ 1530  la
+ 1531  la /tmp/
+ 1532  vim shiv_nfs_containers/redis_container/rootfs/redis_run_r95.sh 
+ 1533  vim shiv_nfs_containers/redis_container/rootfs/etc/my_redis.conf 
+ 1534  vim shiv_nfs_containers/redis_container/rootfs/redis_run_r95.sh 
+ 1535  tmux attach -t op
+ 1536  sudo tail -f shiv_nfs_containers/redis_container/rootfs/debug_redis_server.log 
+ 1537  tmux attach -t op
+ 1538  sudo runc ps redis
+ 1539  sudo runc kill redis KILL
+ 1540  sudo vim shiv_nfs_containers/redis_container/rootfs/YCSB/ycsb_tcp_run_1M_phosts_r95.out 
+ 1541  sudo runc list
+ 1542  sudo ./clean_after_iter_dump_diskless.sh 
+ 1543  la
+ 1544  la /tmp/
+ 1545  sudo sync; echo 3 > /proc/sys/vm/drop_caches
+ 1546  sudo sync; sudo echo 3 > /proc/sys/vm/drop_caches
+ 1547  sudo sync
+ 1548  sudo echo 3 > /proc/sys/vm/drop_caches 
+ 1549  sudo cat /proc/sys/vm/drop_caches 
+ 1550  sudo su
+ 1551  free -h
+ 1552  tmux attach -t op
+ 1553  tmux attach -t mig
+ 1554  sudo tail -f shiv_nfs_containers/redis_container/rootfs/debug_redis_server.log 
+ 1555  sudo runc ps redis
+ 1556  tmux attach -t op
+ 1557  sudo runc ps redis
+ 1558  sudo tail -f shiv_nfs_containers/redis_container/rootfs/debug_redis_server.log 
+ 1559  sudo runc kill redis KILL
+ 1560  la
+ 1561  sudo su
+ 1562  vim shiv_nfs_containers/redis_container/rootfs/redis_run_r95.sh 
+ 1563  tmux attach -t op
+ 1564  tmux attach -t mig
+ 1565  vim shiv_nfs_containers/redis_container/rootfs/redis_run_r95.sh 
+ 1566  vim shiv_nfs_containers/redis_container/rootfs/redis_run_r90.sh 
+ 1567  vim shiv_nfs_containers/redis_container/rootfs/redis_run_r80.sh 
+ 1568  vim shiv_nfs_containers/redis_container/rootfs/redis_run_r70.sh 
+ 1569  vim shiv_nfs_containers/redis_container/rootfs/redis_run_r60.sh 
+ 1570  la
+ 1571  sudo ./clean_after_iter_dump_diskless.sh 
+ 1572  la
+ 1573  la /tmp/
+ 1574  la
+ 1575  la /tmp/
+ 1576  dmesg
+ 1577  sudo dmesg -C
+ 1578  dmesg
+ 1579  la
+ 1580  cd container_workspace/
+ 1581  vim shiv_nfs_containers/redis_container/rootfs/etc/my_redis.conf 
+ 1582  vim shiv_nfs_containers/redis_container/rootfs/run/redis_6379.pid 
+ 1583  cat shiv_nfs_containers/redis_container/rootfs/run/redis_6379.pid 
+ 1584  exit
+ 1585  git clone git@git.cse.iitk.ac.in:shivbt/runc-base.git
+ 1586  ls
+ 1587  cd runc-base/
+ 1588  ls
+ 1589  la
+ 1590  rm -rf .git
+ 1591  rm -rf .github/
+ 1592  la
+ 1593  cd ..
+ 1594  ls
+ 1595  git clone git@git.cse.iitk.ac.in:yashasd/ugp_2024.git
+ 1596  cd ugp_2024/
+ 1597  ls
+ 1598  cp ../runc-base/ .
+ 1599  cp -r ../runc-base/ .
+ 1600  la
+ 1601  git status
+ 1602  mv runc-base/ runc
+ 1603  ls
+ 1604  git status
+ 1605  git add runc/
+ 1606  git status
+ 1607  git log
+ 1608  git commit -m "Initial runC"
+ 1609  git push
+ 1610  cd criu/
+ 1611  git status
+ 1612  make clean
+ 1613  make -j6
+ 1614  sudo make install
+ 1615  ls /usr/local/go/src/github.com/opencontainers/
+ 1616  cd ..
+ 1617  cp -r runc/ /usr/local/go/src/github.com/opencontainers/
+ 1618  sudo cp -r runc/ /usr/local/go/src/github.com/opencontainers/
+ 1619  sudo us
+ 1620  sudo su
+ 1621  runc -V
+ 1622  runc -v
+ 1623  criu -V
+ 1624  ls
+ 1625  cd
+ 1626  ls
+ 1627  cd container_workspace/
+ 1628  cd shiv_nfs_containers/redis_container/rootfs/
+ 1629  ls
+ 1630  vim test.c
+ 1631  gcc -o test test.c 
+ 1632  ./test 
+ 1633  vim test.c
+ 1634  gcc -o test test.c 
+ 1635  ./test 
+ 1636  ps axjf | grep test
+ 1637  cd ..
+ 1638  vim config.json 
+ 1639  sudo vim config.json 
+ 1640  sudo runc run redis
+ 1641  sudo vim config.json 
+ 1642  sudo runc run redis
+ 1643  sudo runc ps redis
+ 1644  sudo runc kill redis KILL
+ 1645  ls
+ 1646  sudo vim config.json 
+ 1647  cd 
+ 1648  cd container_workspace/
+ 1649  la
+ 1650  la /tmp/
+ 1651  la
+ 1652  ls
+ 1653  tmux ls
+ 1654  tmux attach -t op
+ 1655  tmux attach -t mig
+ 1656  sudo runc kill redis KILL
+ 1657  sudo runc list
+ 1658  tmux attach -t op
+ 1659  tmux attach -t mig
+ 1660  sudo runc ps redis
+ 1661  sudo cat shiv_nfs_containers/redis_container/rootfs/YCSB/ycsb_tcp_run_1M_phosts_r95.out 
+ 1662  sudo runc kill redis KILL
+ 1663  sudo ls
+ 1664  ls
+ 1665  sudo ./clean_after_iter_dump_diskless.sh 
+ 1666  la
+ 1667  la /tmp/
+ 1668  la
+ 1669  la /tmp/
+ 1670  la
+ 1671  la /tmp/
+ 1672  sudo rm container_rs.log 
+ 1673  la
+ 1674  ls
+ 1675  sudo ./reset_net_ns_iptable.sh 
+ 1676  vim reset_net_ns_iptable.sh 
+ 1677  sudo ip netns ls
+ 1678  sudo ip netns exec shiv_ns iptables -L
+ 1679  sudo iptables -L
+ 1680  tmux attach -t op
+ 1681  tmux attach -t mig
+ 1682  vim test_migrate_local_pcriu.sh 
+ 1683  tmux attach -t mig
+ 1684  sudo runc ps redis
+ 1685  sudo tail -f shiv_nfs_containers/redis_container/rootfs/YCSB/ycsb_tcp_run_1M_phosts_r90.out 
+ 1686  sudo tail -f shiv_nfs_containers/redis_container/rootfs/debug_redis_server.log 
+ 1687  sudo runc ps redis
+ 1688  sudo strace -f -p 21732 -o strace_redis_server_src.out
+ 1689  sudo strace -f -p 21733 -o strace_redis_benchmark_src.out
+ 1690  sudo runc ps redis
+ 1691  sudo runc kill redis KILL
+ 1692  la
+ 1693  ls xfer_server_dir/1
+ 1694  ls xfer_server_dir/4
+ 1695  ls xfer_server_dir/5
+ 1696  sudo ./clean_after_iter_dump_diskless.sh 
+ 1697  la
+ 1698  la /tmp/
+ 1699  la
+ 1700  la /tmp/
+ 1701  la
+ 1702  sudo cat container_rs.log 
+ 1703  sudo rm container_rs.log 
+ 1704  la
+ 1705  tmux attach -t op
+ 1706  tmux attach -t mig
+ 1707  vim diskless_migrate_pcriu.sh 
+ 1708  tmux attach -t mig
+ 1709  sudo ./clean_after_iter_dump_diskless.sh 
+ 1710  la
+ 1711  la /tmp/
+ 1712  la
+ 1713  la /tmp/
+ 1714  la
+ 1715  la /tmp/
+ 1716  la
+ 1717  cp strace_* ~/office-machine-related/Source\ Machine\ Scripts/
+ 1718  cd ~/office-machine-related/
+ 1719  git status
+ 1720  cd Source\ Machine\ Scripts/
+ 1721  git add *
+ 1722  git status
+ 1723  git log
+ 1724  git status
+ 1725  git commit -m "strace local migration log
+ 1726  [SOLVING] After restore at remote machine the logs are not printed...
+ 1727            Finding the reason for this.
+ 1728  "
+ 1729  git push
+ 1730  git pull
+ 1731  cd container_workspace/
+ 1732  cat strace_commands.txt 
+ 1733  ls
+ 1734  ls ~/u
+ 1735  ls ~/ugp_2024/
+ 1736  cd ~/ugp_2024/
+ 1737  git status
+ 1738  cd ~/container_workspace/
+ 1739  cat strace_commands.txt 
+ 1740  cd pCRIU/
+ 1741  git status
+ 1742  git diff
+ 1743  git checkout criu/cr-service.
+ 1744  git checkout criu/cr-service.c
+ 1745  git status
+ 1746  make clean
+ 1747  make -j6
+ 1748  sudo make install
+ 1749  make clean
+ 1750  git log | head
+ 1751  criu -V
+ 1752  cd ..
+ 1753  cat strace_commands.txt 
+ 1754  sudo runc kill redis KILL
+ 1755  cd container_workspace/
+ 1756  ls
+ 1757  mkdir images_dir
+ 1758  sudo runc checkpoint --help
+ 1759  sudo runc checkpoint --image-path /home/cse/container_workspace/images_dir --work-path /home/cse/container_workspace redis
+ 1760  ls images_dir/
+ 1761  sudo runc restore --help
+ 1762  sudo runc restore --image-path /home/cse/container_workspace/images_dir --work-path /home/cse/container_workspace --bundle /home/cse/container_workspace/shiv_nfs_containers/redis_container redis
+ 1763  ls
+ 1764  sudo vim dump.log 
+ 1765  sudo vim restore.log 
+ 1766  sudo ./clean_after_iter_dump_diskless.sh 
+ 1767  la
+ 1768  sudo rm -rf images_dir/ dump.log restore
+ 1769  sudo rm -rf images_dir/ dump.log restore.log 
+ 1770  la
+ 1771  sudo rm stats-dump stats-restore 
+ 1772  ls
+ 1773  ls observations/
+ 1774  cd pCRIU/
+ 1775  make uninstall
+ 1776  sudo make uninstall
+ 1777  make clean
+ 1778  make -j6
+ 1779  sudo make install
+ 1780  criu -V
+ 1781  git log | head
+ 1782  cd ..
+ 1783  ls
+ 1784  cd pCRIU/
+ 1785  git status
+ 1786  cd ..
+ 1787  sudo vim strace_redis_server_src.out 
+ 1788  mv strace_redis_server_src.out strace_redis_server_local.out 
+ 1789  mv strace_redis_benchmark_src.out strace_redis_benchmark_local.out 
+ 1790  ls
+ 1791  ls con
+ 1792  ls container_workspace/
+ 1793  ls gitcse/
+ 1794  cd container_workspace/
+ 1795  sudo su
+ 1796  runc -V
+ 1797  runc -v
+ 1798  cd container_workspace/
+ 1799  exit
+ 1800  cd container_workspace/
+ 1801  cd pCRIU/
+ 1802  cscope -R
+ 1803  cd ..
+ 1804  date +%T.%3N
+ 1805  date
+ 1806  date -s "2024-01-15 23:32:00"
+ 1807  date
+ 1808  date -s "2024-01-15 23:32:00"
+ 1809  date
+ 1810  sudo date -s "2024-01-15 23:32:30"
+ 1811  date
+ 1812  date +%T.%3N
+ 1813  criu -V
+ 1814  cd container_workspace/
+ 1815  ls
+ 1816  la
+ 1817  la /tmp/
+ 1818  la
+ 1819  ls
+ 1820  tmux ls
+ 1821  tmux attach -t op
+ 1822  sudo runc kill redis KILL
+ 1823  la
+ 1824  la /tmp/
+ 1825  la
+ 1826  tmux attach -t op
+ 1827  tmux attach -t mig
+ 1828  sudo runc list
+ 1829  ps axjf
+ 1830  sudo vim restore.log 
+ 1831  sudo kill -9 18863
+ 1832  sudo kill -9 18851
+ 1833  sudo kill -9 18841
+ 1834  ps aux | grep criu
+ 1835  ps aux | grep runc
+ 1836  sudo runc list
+ 1837  sudo ./clean_after_iter_dump_diskless.sh 
+ 1838  la
+ 1839  sudo ./pcriu_test_clean.sh 
+ 1840  la
+ 1841  la /tmp/
+ 1842  sudo rm container_rs.log 
+ 1843  sudo rm /tmp/prestore_pipe_xfer_to_criu 
+ 1844  la
+ 1845  la /tmp/
+ 1846  la
+ 1847  la /tmp/
+ 1848  la
+ 1849  ls
+ 1850  date
+ 1851  sudo ls
+ 1852  date
+ 1853  tmux attach -t op
+ 1854  tmux attach -t mig
+ 1855  sudo runc list
+ 1856  sudo ./clean_after_iter_dump_diskless.sh 
+ 1857  la
+ 1858  la /tmp/
+ 1859  la
+ 1860  la /tmp/
+ 1861  la
+ 1862  cd container_workspace/
+ 1863  cd pCRIU/
+ 1864  ls
+ 1865  cscope -R
+ 1866  make clean
+ 1867  make -j6
+ 1868  sudo make install
+ 1869  make clean
+ 1870  cd ..
+ 1871  cd pCRIU/
+ 1872  git diff
+ 1873  cscope -R
+ 1874  git status
+ 1875  git diff
+ 1876  git status
+ 1877  git checkout criu/cr-restore.c
+ 1878  git checkout criu/cr-service.c
+ 1879  git status
+ 1880  make clean
+ 1881  make -j6
+ 1882  sudo make install
+ 1883  cd ..
+ 1884  uname -a
+ 1885  cd pCRIU/
+ 1886  cscope -R
+ 1887  git sttaus
+ 1888  git status
+ 1889  git diff
+ 1890  git status
+ 1891  git checkout criu/cr-restore.c
+ 1892  git checkout criu/cr-service.
+ 1893  git checkout criu/cr-service.c
+ 1894  git status
+ 1895  date + %T.%3N
+ 1896  date +%T.%3N
+ 1897  criu -V
+ 1898  git status
+ 1899  ls
+ 1900  exit
+ 1901  cd container_workspace/
+ 1902  cd pRunC/
+ 1903  git diff Makefile
+ 1904  git diff Makefile > ~/makefile_diff_prunc.out
+ 1905  ls ~
+ 1906  git diff checkpoint.go
+ 1907  git checkout checkpoint.go
+ 1908  git diff libcontainer/criu_linux.go
+ 1909  git status
+ 1910  git checkout  libcontainer/criu_linux.go
+ 1911  git diff libcontainer/criu_opts_linux.go
+ 1912  git checkout  libcontainer/criu_opts_linux.go
+ 1913  git diff restore.go
+ 1914  git checkout restore.go
+ 1915  git status
+ 1916  git status | grep modified
+ 1917  git checkout Makefile
+ 1918  git diff restore.go
+ 1919  git diff tests/integration/helpers.bash
+ 1920  git diff vendor/github.com/checkpoint-restore/go-criu/v6/rpc/rpc.pb.go
+ 1921  git checkout vendor/github.com/checkpoint-restore/go-criu/v6/rpc/rpc.pb.go
+ 1922  git diff vendor/github.com/checkpoint-restore/go-criu/v6/rpc/rpc.proto
+ 1923  git checkout  vendor/github.com/checkpoint-restore/go-criu/v6/rpc/rpc.proto
+ 1924  git checkout rpc/rpc.pb.go
+ 1925  git checkout rpc/rpc.proto
+ 1926  protoc
+ 1927  protoc --help
+ 1928  protoc --version
+ 1929  sudo apt update
+ 1930  sudo apt install protobuf-compile
+ 1931  sudo apt install protobuf-compiler
+ 1932  protoc-gen-go
+ 1933  protoc-gen-go --version
+ 1934  protoc-gen-go --help
+ 1935  ps aux | grep protoc
+ 1936  sudo apt remove protoc
+ 1937  sudo apt remove libprotoc
+ 1938  sudo apt remove protoc-compiler
+ 1939  sudo apt autoremove protoc-compiler
+ 1940  sudo apt install protoc-compiler
+ 1941  protoc
+ 1942  protoc --help
+ 1943  protoc --version
+ 1944  sudo apt install protoc-compiler
+ 1945  telnet www.google.com
+ 1946  sudo apt install protoc-compiler
+ 1947  sudo apt remove protobuf-compiler
+ 1948  sudo apt autoremove
+ 1949  cd ~/Downloads/
+ 1950  PB_REL="https://github.com/protocolbuffers/protobuf/releases"
+ 1951  ls
+ 1952  curl -LO $PB_REL/download/v3.19.4/protoc-3.19.4-linux-x86_64.zip
+ 1953  ls
+ 1954  unzip protoc-3.15.8-linux-x86_64.zip -d $HOME/.local
+ 1955  unzip protoc-3.19.4-linux-x86_64.zip -d $HOME/.local
+ 1956  ls ~/
+ 1957  ls ~/.local
+ 1958  ls ~/.local/include/
+ 1959  ls ~/.local/bin/
+ 1960  ls ~/.local/bin/ -lh
+ 1961  ls
+ 1962  vim /etc/profile
+ 1963  sudo vim /etc/profile
+ 1964  which protoc
+ 1965  source /etc/profile
+ 1966  exit
+ 1967  which protoc
+ 1968  cd container_workspace/
+ 1969  ls
+ 1970  cd pRunC/
+ 1971  ls
+ 1972  cat ~/makefile_diff_prunc.out 
+ 1973  protoc --proto_path=rpc/ --go_out=rpc/ rpc/rpc.proto 
+ 1974  cd ~/Downloads/
+ 1975  ls
+ 1976  wget https://github.com/protocolbuffers/protobuf-go/releases/download/v1.28.1/protoc-gen-go.v1.28.1.linux.amd64.tar.gz
+ 1977  ls
+ 1978  untar -xvzf protoc-gen-go.v1.28.1.linux.amd64.tar.gz 
+ 1979  tar -xvzf protoc-gen-go.v1.28.1.linux.amd64.tar.gz 
+ 1980  ls
+ 1981  mv protoc-gen-go ~/.local/bin/
+ 1982  ls
+ 1983  exit
+ 1984  cd container_workspace/
+ 1985  cd pRunC/
+ 1986  protoc --proto_path=rpc/ --go_out=rpc/ rpc/rpc.proto 
+ 1987  cat ~/makefile_diff_prunc.out 
+ 1988  protoc --proto_path=rpc/ --go_out=rpc/ --go_opt=M rpc/rpc.proto 
+ 1989  protoc --proto_path=rpc/ --go_out=rpc/ --go_opt=Mrpc/rpc.proto 
+ 1990  protoc --proto_path=rpc/ --go_out=rpc/ --go_opt=Mrpc/rpc.proto rpc/rpc.proto 
+ 1991  protoc --proto_path=rpc/ --go_out=rpc/ --go_opt=Mrpc rpc/rpc.proto 
+ 1992  ls rpc/
+ 1993  rm rpc/rpc.pb.go 
+ 1994  protoc --proto_path=rpc/ --go_out=rpc/ --go_opt=paths=import rpc/rpc.proto 
+ 1995  git log
+ 1996  protoc rpc/rpc.proto --go_out=.
+ 1997  cd rpc/
+ 1998  ls
+ 1999  protoc --go_out=. *.proto
+ 2000  cd ../
+ 2001  ls
+ 2002  vim Makefile 
+ 2003  make rpc
+ 2004  make rpc/rpc.pb.go 
+ 2005  ls
+ 2006  ls rpc/
+ 2007  vim rpc/rpc.pb.go 
+ 2008  vim Makefile 
+ 2009  make rpc
+ 2010  rm rpc/rpc.pb.go 
+ 2011  make rpc
+ 2012  ls rpc/
+ 2013  vim Makefile 
+ 2014  make rpc-proto
+ 2015  ls rpc/
+ 2016  vim rpc/rpc.pb.go 
+ 2017  git status
+ 2018  ls rpc/rpc.pb.go -lh
+ 2019  git status
+ 2020  git add *
+ 2021  git commit -m "Timens support from runc is merged with pRunC v0.3
+[CORRECTED] Now its compiling...
+[ADDED] Use *make rpc-proto* command from pRunC directory to generate rpc.pb.go
+        given that you have a *rpc* directory with .proto file in pRunC.
+"
+ 2022  git status
+ 2023  git push
+ 2024  git status
+ 2025  ls -lh Makefile 
+ 2026  git log | head
+ 2027  cd ..
+ 2028  history
+ 2029  history > protoc_and_protoc_gen_go_cmd_history.txt
